@@ -120,12 +120,87 @@ Remember, the changes we have made are only in effect locally. Now we want to pu
 
 We are working on the main branch of this repository. We will cover branching in the next scenario.
 ```
+git pull origin main
+
 git push origin main
-
-or 
-
-git push
 ```
+
+# Scenario 2: Branching
+
+I briefly touched on branches earlier. Basically, branches are parallel versions of your codebase. The purpose of branching is so that multiple developers can work on code at the same time. This allows for faster development across your team. So far, we have been working only on the main branch of our repository. This isn't really how you should use version control and git in your daily workflow. 
+
+A common workflow is to create a branch for your desired feature and then begin working off that branch. 
+
+### Creating a branch
+
+This creates the branch **locally**
+```
+git branch square_function
+```
+
+Now let's see our local branches to make sure it worked correctly. You see the * next to main, indicating we are still working in the main branch, though we have created a new one called 'square_function'.
+```
+git branch
+```
+
+Now we can move into our new branch. We must check out the branch in order to work in it.
+```
+git checkout square_function
+```
+
+Check to make sure you are working in the new branch
+
+```
+git branch
+```
+
+Now we can work on our new feature in this branch. Let's make some changes to our code. Once we have done that we will push hour changes to our **local branch**
+```
+git status
+
+git add -A
+
+git commit -m "added square function"
+```
+
+Push branch to **remote** repository. We have only made these changes locally so far.
+
+```
+git push -u origin square_function
+```
+
+The '-u' tells git we want to associate our local 'square_function' branch with our remote 'square_function' branch. 
+Now, lets see the status of our branches both **locally** and **remotely**.
+
+```
+git branch -a
+```
+
+### Merging branches
+
+Now that we have created a branch, pushed changes to it, and pushed it to our remote Github repository, it is time to merge our changes into the main branch, which is the top level branch in our repository.
+
+We should check out our main branch **locally** first
+```
+git checkout main
+```
+
+Pull any changes that have been made to the main branch while we have been working on our new feature
+
+```
+git pull origin main
+```
+
+Merge our two branches **locally**
+```
+git merge square_function
+```
+
+
+
+
+
+
 
 
 
