@@ -196,6 +196,24 @@ Merge our two branches **locally**
 git merge square_function
 ```
 
+### Deleting branches
+
+It is good practice to delete branches once you have merged them with your main branch. This keeps them from cluttering your project
+
+First, we will delete this branch **locally**
+```
+git branch -d square_function
+```
+
+Don't forget that this branch still exists in the remote repository
+```
+git branch -a
+```
+
+Let's delete this branch **remotely**
+```
+git push origin --delete square_function
+```
 
 
 
