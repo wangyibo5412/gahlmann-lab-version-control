@@ -56,5 +56,25 @@ This is in the situation that you will be working from an existing Github reposi
 git clone <url> <where to clone (optional)>
 
 ex:
-git clone 
+git clone https://github.com/epurpur/gahlmann-lab-version-control
 ```
+This will clone (download) all files, code, change logs, etc for this project onto your project 
+
+Navigate into the new directory
+```
+cd gahlmann-lab-version-control
+```
+
+View information about the remote repository. This can be useful especially in the situation that you have a local project you are working on and want to make sure it has been correctly connected to a github repository.
+```
+git remote -v
+```
+
+### Committing changes
+Now that we have cloned a repository, we want to develop our code and make changes to it.
+
+First, check the status of our repository
+```
+git status
+```
+
