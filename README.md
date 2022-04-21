@@ -77,4 +77,4 @@ First, check the status of our repository
 ```
 git status
 ```
-
+We havent made any changes so there should be information here.
