@@ -215,11 +215,22 @@ Let's delete this branch **remotely**
 git push origin --delete square_function
 ```
 
+# Best Practices
 
 
 
 
 
 
+# Other Resources
 
+Here are a few handy resources to refer to about what we have just covered
 
+## Corey Schafer - git workflow series
+Corey Schafer is a guy with a youtube channel that has made great videos that are very educational and easy to follow. I have based entirely what I covered on his version control workshops.
+- [Git Basics](https://www.youtube.com/watch?v=HVsySz-h9r4)
+- [Fixing Common Mistakes and Bad Commits](https://www.youtube.com/watch?v=FdZecVxzJbk&list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx&index=2)
+- [The rest of his git series](https://www.youtube.com/watch?v=FdZecVxzJbk&list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx&index=2)
+
+## Version Control best practices
+- [My best practices cheat sheet](https://homes.cs.washington.edu/~mernst/advice/version-control.html)
