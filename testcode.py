@@ -15,3 +15,6 @@ def multiply_function(x, y):
 def divide_function(x, y):
     return x / y
 
+def square_function(x, y):
+    return x ** y
+
