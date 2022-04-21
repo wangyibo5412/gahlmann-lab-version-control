@@ -70,11 +70,63 @@ View information about the remote repository. This can be useful especially in t
 git remote -v
 ```
 
-### Committing changes
+### Committing changes locally
 Now that we have cloned a repository, we want to develop our code and make changes to it.
 
 First, check the status of our repository
 ```
 git status
 ```
-We havent made any changes so there should be information here.
+We havent made any changes so the working tree should be clean. 
+
+Now let's make some changes to the testcode.py file 
+
+***to do this, open testcode.py in any text editor and make some changes to the code. It doesn't matter what changes are made***
+
+Now, let's stage these commits **locally**. Let's see that these are being tracked by git now.
+```
+git status
+```
+
+Add these changes to the staging area
+
+```
+git add -A
+```
+
+Check the status again
+
+```
+git status
+```
+
+You see that these changes are ready to be committed
+
+Now, let's commit these changes. Againk we are committing these changes **locally**
+
+```
+git commit -m "my message here"
+```
+
+Check status again to see that the working tree is clean
+
+```
+git status
+```
+
+### Committing changes remotely
+
+Remember, the changes we have made are only in effect locally. Now we want to push these changes to our **remote** repository, which in this case is Github.
+
+We are working on the main branch of this repository. We will cover branching in the next scenario.
+```
+git push origin main
+
+or 
+
+git push
+```
+
+
+
+
