@@ -18,3 +18,5 @@ def divide_function(x, y):
 def square_function(x, y):
     return x ** y
 
+def test2_func():
+    return 'test 2 function'
