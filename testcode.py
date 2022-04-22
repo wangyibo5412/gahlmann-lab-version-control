@@ -14,3 +14,6 @@ def multiply_function(x, y):
 
 def divide_function(x, y):
 	return x / y
+
+def print_function:
+    return 'ha ha ha'
